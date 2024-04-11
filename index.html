@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devic      e-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminuevos/Lp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" href="img/coche.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Seminuevos/Lp</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-            <div class="container" style="padding: 0 0 0 0; margin-top: 0px; margin-bottom: 0;">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,10 +26,10 @@
                             <a class="nav-link" href="./pages/Stock.html">STOCK</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">NOSOTROS</a>
+                            <a class="nav-link" href="./pages/Nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">VENDE TU VEHICULO</a>
+                            <a class="nav-link" href="./pages/vender.html">VENDE TU VEHICULO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
@@ -39,39 +39,42 @@
             </div>
         </nav>
     </header>
-    
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/ladehesa.jpg" class="item1" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/ladehesa1.jpg" class="item1" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/ladehesa2.jpg" class="item1" alt="...">
-          </div>
+            <div class="carousel-item active">
+                <img src="./img/ladehesa.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/ladehesa1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/ladehesa2.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
 
     <main>
-        
         <section class="vehiculos-destacados">
-            <h2><span>V</span>ehiculos <span>D</span>estacados</h2>
+            <h2>Vehiculos Destacados</h2>
             <div class="bmw">
                 <div class="bmw-item-container">
                     <div class="bmw-item"><img src="./img/auto1.png" alt="Vehículo 1"></div>
@@ -89,17 +92,15 @@
                 <div class="testimonio1">
                     <h3>Juan Picinini</h3>
                     <img src="./img/juan.jpg" alt="">
-                    <p>Muchas gracias por la eficacia y <br>entrega que nos dieron desde el primer día.</p>
+                    <p>Muchas gracias por la eficacia y entrega que nos dieron desde el primer día.</p>
                 </div>
                 <div class="testimonio1">
                     <h3>Hernan</h3>
                     <img src="./img/juan.jpg" alt="">
-                    <p>Muchas gracias por la eficacia y <br>entrega que nos dieron desde el primer día.</p>
+                    <p>Muchas gracias por la eficacia y entrega que nos dieron desde el primer día.</p>
                 </div>
             </div>
-
             <!-- Repite esta estructura para más testimonios -->
-            </div>
         </section>
     </main>
 
@@ -112,9 +113,8 @@
             <a href="#"><img src="./img/wsp.png" alt="WhatsApp"></a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

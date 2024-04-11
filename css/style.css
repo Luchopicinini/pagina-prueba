@@ -1,4 +1,4 @@
-/* Reset y configuración básica */
+/* index */
 * {
     margin: 0;
     padding: 0;
@@ -134,9 +134,43 @@ iframe {
     margin: 10px;
 }
 
+@media (max-width: 1152px) {
+    .testimonios  {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1152px) {
+    .testimonios h2 {
+        margin-left: 250px;
+    }
+}    
+
+@media (max-width: 725px) {
+    .testimonios-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 725px) {
+    .testimonios-container img {
+        align-items: center;
+    }
+}
+
+@media (max-width: 725px) {
+    .fixed a img  {
+        margin-right: 30px;
+    }
+}
+
+
 /*STOCK**/
 .body-stock {
     background-color: #000000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .grid-container {
@@ -172,10 +206,6 @@ iframe {
     color: white;
     margin-bottom: 5px;
     border-radius: 20px;
-}
-
-.fixed-stock iframe {
-    margin-top: 0px;
 }
 
 .container-boton {
@@ -216,11 +246,11 @@ iframe {
     background-color: #d90e0e;
 }
 
-.fixed-stock iframe {
+.iframe1 {
+    margin: 0;
     width: 100%;
-    margin-top: 10px;
+    height: 300px;
 }
-
 @media(max-width:789px) {
     .grid-container{
         grid-template-columns: 1fr;
@@ -248,10 +278,17 @@ iframe {
     }
 }
 
-@media(max-width:394px) {
-    iframe {
-        width: 100%; /* Establece el ancho al 100% del contenedor */
-        max-width: 100%; /* Garantiza que el ancho no sea más grande que el contenedor */
-        height: 300px; /* Establece una altura fija o ajusta según tus necesidades */
-    }
+/*NOSOTROS**/
+
+.grid-container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual altura */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.grid-container-nosotros > div {
+    border: 1px solid #ccc; /* Borde para visualización */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
 }
