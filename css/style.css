@@ -172,6 +172,27 @@ iframe {
     padding: 0;
     box-sizing: border-box;
 }
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que la barra de navegación esté encima del contenido */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+    margin-top: 200px; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .grid-container {
     display: grid;
@@ -179,6 +200,7 @@ iframe {
     gap: 20px;
     /* Espacio entre las celdas de la cuadrícula */
     margin-top: 50px;
+    background-color: rgb(213, 82, 113);
 }
 
 .titulo {
@@ -193,7 +215,7 @@ iframe {
 }
 
 .grid-item img {
-    width: 250px;
+    width: 350px;
     height: 200px;
 }
 
@@ -205,7 +227,8 @@ iframe {
     background-color: #000000;
     color: white;
     margin-bottom: 5px;
-    border-radius: 20px;
+    border-radius: 50px;
+    padding: 10px;
 }
 
 .container-boton {
@@ -267,7 +290,8 @@ iframe {
 @media(max-width:789px){
     .grid-item h2{
         font-size: 40px;
-        background-color: #00ff1e;
+        background-color: #090909;
+        color: #ffb3b3;
     }
 }
 
@@ -278,20 +302,44 @@ iframe {
     }
 }
 
+@media(max-width:1090px){
+    .video-container iframe {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
 /*NOSOTROS**/
+
+.Nosotros-container {
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
 
 .grid-container-nosotros {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
-    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual altura */
-    gap: 20px; /* Espacio entre los elementos */
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px; 
 }
 
 .grid-container-nosotros > div {
-    border: 1px solid #ccc; /* Borde para visualización */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centrar contenido */
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    text-align: justify; 
 }
+
+.grid-container-nosotros img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.texto-nosotros img {
+    grid-column: 2/ span -1;
+}
+.texto-nosotros p {
+    grid-column: 2/ span 1;
+}
+
 
 /*vender**/
 .body-vender {
